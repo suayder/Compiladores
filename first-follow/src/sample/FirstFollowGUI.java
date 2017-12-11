@@ -118,9 +118,18 @@ public class FirstFollowGUI {
                                 }
                                 rules = rules + aux.charAt(i);
 
-                                if(V.contains(rules) || T.contains(rules)) {
-                                    elements.add(rules);
-                                    rules = new String("");
+                                if(i+1<aux.length()){
+                                    if(V.contains(rules+aux.charAt(i+1)) || T.contains(rules+aux.charAt(i+1)));
+                                    else if(V.contains(rules) || T.contains(rules)){
+                                        elements.add(rules);
+                                        rules = new String("");
+                                    }
+                                }
+                                else {
+                                    if (V.contains(rules) || T.contains(rules)) {
+                                        elements.add(rules);
+                                        rules = new String("");
+                                    }
                                 }
 
                             }
