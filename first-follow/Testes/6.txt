@@ -1,0 +1,6 @@
+S ,A, B
+a,b,c,&
+S->A B
+A -> c|&
+B->c b B |c a
+S

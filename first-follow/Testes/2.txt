@@ -1,0 +1,9 @@
+S,A,B,C,D,E
+a,b,c,d,e,&
+S->ABCDE
+A->a|&
+B->b|&
+C->c
+D->d|&
+E->e|&
+S

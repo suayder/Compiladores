@@ -1,0 +1,6 @@
+S,B,C
+x,y,z,a,c,d,e,f,g
+S->xyz|a B C
+B->c|cd
+C->eg|df
+S

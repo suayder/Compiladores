@@ -277,6 +277,7 @@ public class Automato {
 
         resultado.estados.add(0);
         for (int estado : a1.estados) {
+            resultado.estadosFinais.add(novaQtEstados - 1);
             resultado.estados.add(estado + 1);
         }
         for (int estado : a2.estados) {
@@ -634,7 +635,6 @@ public class Automato {
             mapeamentoDeEstados.put(i,cont);
             cont++;
         }
-
         this.matrizTransicaoAFDMinimo = new Integer[novosEstados.size()][this.alfabetoAFD.size()];
 
         for(int i = 0;i<novasTransicoes.length;i++){

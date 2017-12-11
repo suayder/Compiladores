@@ -1,0 +1,8 @@
+E,X,T,Y,F
++,*,&,(,),id
+E->TX
+X->+TX|&
+T->FY
+Y->*FY|&
+F->id|(E)
+E

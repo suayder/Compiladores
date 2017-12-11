@@ -1,0 +1,6 @@
+S,B,C
+a,b,c,d,&
+S->Bb|Cd
+B->aB|&
+C->cC|&
+S
